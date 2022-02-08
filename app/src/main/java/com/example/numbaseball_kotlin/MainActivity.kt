@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     var round = 0
 
-    var context : String = ""
+    var contents : String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 resetData()
 
                 tv_context.text = ""
-                context = ""
+                contents = ""
                 round = 0
                 setComRndNum()
 
@@ -164,9 +164,9 @@ class MainActivity : AppCompatActivity() {
 
         round++
 
-        context+= round.toString()+"회 / "+sumUserNum+" S : "+s+" B: "+b+" O : "+o+"\n"
+        contents+= round.toString()+"회 / "+sumUserNum+" S : "+s+" B: "+b+" O : "+o+"\n"
 
-        tv_context.setText(context)
+        tv_context.setText(contents)
 
 
         Log.e("QQQQQQQQQ : ", comRnd.toString()+" , "+ userRnd.toString()+" , s: "+ s+" ,b : "+ b+" , o: "+ o)
@@ -182,7 +182,7 @@ class MainActivity : AppCompatActivity() {
                 resetData()
 
                 tv_context.text = ""
-                context = ""
+                contents = ""
                 round = 0
                 setComRndNum()
 
@@ -201,7 +201,7 @@ class MainActivity : AppCompatActivity() {
                 resetData()
 
                 tv_context.text = ""
-                context = ""
+                contents = ""
                 round = 0
                 setComRndNum()
 
